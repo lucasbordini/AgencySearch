@@ -99,13 +99,14 @@
 		A09784162434C7230010D063 /* AgencySearch */ = {
 			isa = PBXGroup;
 			children = (
-				A09784172434C7230010D063 /* AppDelegate.swift */,
-				A09784192434C7230010D063 /* SceneDelegate.swift */,
-				A097841B2434C7230010D063 /* ViewController.swift */,
-				A097841D2434C7230010D063 /* Main.storyboard */,
-				A09784202434C7260010D063 /* Assets.xcassets */,
-				A09784222434C7260010D063 /* LaunchScreen.storyboard */,
-				A09784252434C7260010D063 /* Info.plist */,
+				A0978448243512B10010D063 /* Assets */,
+				A097844D243513090010D063 /* Extensions */,
+				A0978449243512F20010D063 /* Model */,
+				A097844C243513040010D063 /* Services */,
+				A09784472435129C0010D063 /* SupportingFIles */,
+				A097844E2435130E0010D063 /* Utils */,
+				A097844A243512F90010D063 /* View */,
+				A097844B243512FD0010D063 /* ViewModel */,
 			);
 			path = AgencySearch;
 			sourceTree = "<group>";
@@ -126,6 +127,69 @@
 				A097843B2434C7260010D063 /* Info.plist */,
 			);
 			path = AgencySearchUITests;
+			sourceTree = "<group>";
+		};
+		A09784472435129C0010D063 /* SupportingFIles */ = {
+			isa = PBXGroup;
+			children = (
+				A09784222434C7260010D063 /* LaunchScreen.storyboard */,
+				A09784252434C7260010D063 /* Info.plist */,
+				A09784172434C7230010D063 /* AppDelegate.swift */,
+				A09784192434C7230010D063 /* SceneDelegate.swift */,
+			);
+			path = SupportingFIles;
+			sourceTree = "<group>";
+		};
+		A0978448243512B10010D063 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A09784202434C7260010D063 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		A0978449243512F20010D063 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A097844A243512F90010D063 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A097841B2434C7230010D063 /* ViewController.swift */,
+				A097841D2434C7230010D063 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A097844B243512FD0010D063 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A097844C243513040010D063 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A097844D243513090010D063 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A097844E2435130E0010D063 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,7 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U7753TEDYK;
-				INFOPLIST_FILE = AgencySearch/Info.plist;
+				INFOPLIST_FILE = AgencySearch/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +518,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U7753TEDYK;
-				INFOPLIST_FILE = AgencySearch/Info.plist;
+				INFOPLIST_FILE = AgencySearch/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
