@@ -34,7 +34,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
+					<string>Maps</string>
 				</dict>
 			</array>
 		</dict>
@@ -42,7 +42,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<string>Maps</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -60,5 +60,16 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>googlechromes</string>
+		<string>comgooglemaps</string>
+	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Preciso da sua localização para te informar a agência mais próxima</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Preciso da sua localização para te informar a agência mais próxima</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Preciso da sua localização para te informar a agência mais próxima</string>
 </dict>
 </plist>

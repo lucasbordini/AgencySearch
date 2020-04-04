@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cjZ-qJ-0zK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="9GA-fn-7nd">
+            <objects>
+                <navigationController id="cjZ-qJ-0zK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="cXl-SZ-TeH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.93725490196078431" green="0.9137254901960784" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QY8-z0-Lwz" kind="relationship" relationship="rootViewController" id="x0b-Qe-b8H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJp-XC-yHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-967" y="137"/>
+        </scene>
+        <!--Place Detail View Controller-->
+        <scene sceneID="mRK-E3-yc7">
+            <objects>
+                <viewController id="QY8-z0-Lwz" customClass="PlaceDetailViewController" customModule="AgencySearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ht7-OX-xbe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xI2-i2-QYW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92O-ko-uN7">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eze-C5-OFk">
+                                                <rect key="frame" x="20" y="20" width="374" height="374"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="eze-C5-OFk" secondAttribute="height" multiplier="1:1" id="gsA-Dh-Cbt"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Endereço" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crx-gJ-2F9">
+                                                <rect key="frame" x="24" y="426" width="374" height="31.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avenida Brigadeiro Faria Lima, 67, São Paulo - São Paulo, Brasil" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koH-dc-LLS">
+                                                <rect key="frame" x="24" y="461.5" width="374" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sB-Uy-CP6">
+                                                <rect key="frame" x="24" y="518.5" width="374" height="31.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+55 (19) 99487-0068" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzy-TE-o53">
+                                                <rect key="frame" x="24" y="554" width="374" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horários" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eA-71-d4m">
+                                                <rect key="frame" x="24" y="591" width="374" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seg: 10:00 às 16:00 Ter: 10:00 às 16:00 Qua: 10:00 às 16:00 Qui: 10:00 às 16:00 Sex: 10:00 às 16:00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCY-gB-E3K">
+                                                <rect key="frame" x="24" y="627" width="374" height="101.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.92156862745098034" green="0.4392156862745098" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="8eA-71-d4m" firstAttribute="leading" secondItem="92O-ko-uN7" secondAttribute="leading" constant="24" id="0zo-Wh-pFv"/>
+                                            <constraint firstItem="crx-gJ-2F9" firstAttribute="top" secondItem="eze-C5-OFk" secondAttribute="bottom" constant="32" id="2wA-72-rRf"/>
+                                            <constraint firstItem="eze-C5-OFk" firstAttribute="top" secondItem="92O-ko-uN7" secondAttribute="top" constant="20" symbolic="YES" id="6td-JI-Nc0"/>
+                                            <constraint firstItem="kzy-TE-o53" firstAttribute="top" secondItem="5sB-Uy-CP6" secondAttribute="bottom" constant="4" id="CmQ-AV-QdA"/>
+                                            <constraint firstItem="eze-C5-OFk" firstAttribute="leading" secondItem="92O-ko-uN7" secondAttribute="leading" constant="20" symbolic="YES" id="DvP-lZ-0P9"/>
+                                            <constraint firstItem="8eA-71-d4m" firstAttribute="top" secondItem="kzy-TE-o53" secondAttribute="bottom" constant="16" id="Hjm-0k-Ttf"/>
+                                            <constraint firstItem="kzy-TE-o53" firstAttribute="leading" secondItem="92O-ko-uN7" secondAttribute="leading" constant="24" id="JbG-OH-5mJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="8eA-71-d4m" secondAttribute="trailing" constant="16" id="KtG-N8-mBl"/>
+                                            <constraint firstItem="5sB-Uy-CP6" firstAttribute="top" secondItem="koH-dc-LLS" secondAttribute="bottom" constant="16" id="Moy-gg-EPE"/>
+                                            <constraint firstItem="koH-dc-LLS" firstAttribute="leading" secondItem="92O-ko-uN7" secondAttribute="leading" constant="24" id="Rva-ae-6mv"/>
+                                            <constraint firstAttribute="trailing" secondItem="crx-gJ-2F9" secondAttribute="trailing" constant="16" id="YzR-FK-Lc5"/>
+                                            <constraint firstAttribute="trailing" secondItem="MCY-gB-E3K" secondAttribute="trailing" constant="16" id="aOe-0o-xgD"/>
+                                            <constraint firstItem="crx-gJ-2F9" firstAttribute="leading" secondItem="92O-ko-uN7" secondAttribute="leading" constant="24" id="cXK-fD-CbF"/>
+                                            <constraint firstAttribute="trailing" secondItem="eze-C5-OFk" secondAttribute="trailing" constant="20" symbolic="YES" id="flC-tb-zAs"/>
+                                            <constraint firstItem="koH-dc-LLS" firstAttribute="top" secondItem="crx-gJ-2F9" secondAttribute="bottom" constant="4" id="okq-xk-neX"/>
+                                            <constraint firstAttribute="trailing" secondItem="kzy-TE-o53" secondAttribute="trailing" constant="16" id="qIv-sG-ayU"/>
+                                            <constraint firstItem="MCY-gB-E3K" firstAttribute="leading" secondItem="92O-ko-uN7" secondAttribute="leading" constant="24" id="uui-gJ-Yfv"/>
+                                            <constraint firstItem="5sB-Uy-CP6" firstAttribute="leading" secondItem="92O-ko-uN7" secondAttribute="leading" constant="24" id="vVz-tb-lZS"/>
+                                            <constraint firstAttribute="trailing" secondItem="5sB-Uy-CP6" secondAttribute="trailing" constant="16" id="xwc-E1-zuT"/>
+                                            <constraint firstAttribute="trailing" secondItem="koH-dc-LLS" secondAttribute="trailing" constant="16" id="yKl-ub-djy"/>
+                                            <constraint firstItem="MCY-gB-E3K" firstAttribute="top" secondItem="8eA-71-d4m" secondAttribute="bottom" constant="4" id="zbJ-VY-Tmb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="92O-ko-uN7" firstAttribute="leading" secondItem="xI2-i2-QYW" secondAttribute="leading" id="33y-fX-568"/>
+                                    <constraint firstAttribute="trailing" secondItem="92O-ko-uN7" secondAttribute="trailing" id="4Vz-lD-X7K"/>
+                                    <constraint firstItem="92O-ko-uN7" firstAttribute="top" secondItem="xI2-i2-QYW" secondAttribute="top" id="7ZG-6e-mAk"/>
+                                    <constraint firstItem="92O-ko-uN7" firstAttribute="centerY" secondItem="xI2-i2-QYW" secondAttribute="centerY" id="KUF-Q1-NMP"/>
+                                    <constraint firstAttribute="bottom" secondItem="92O-ko-uN7" secondAttribute="bottom" id="O1H-KS-9Z6"/>
+                                    <constraint firstItem="92O-ko-uN7" firstAttribute="centerX" secondItem="xI2-i2-QYW" secondAttribute="centerX" id="jjm-VR-bb5"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xI2-i2-QYW" firstAttribute="centerX" secondItem="ht7-OX-xbe" secondAttribute="centerX" id="Bua-B8-y75"/>
+                            <constraint firstItem="xI2-i2-QYW" firstAttribute="top" secondItem="4NF-aA-rKf" secondAttribute="top" id="JSx-0y-D6V"/>
+                            <constraint firstItem="xI2-i2-QYW" firstAttribute="bottom" secondItem="4NF-aA-rKf" secondAttribute="bottom" id="jzS-5P-vQL"/>
+                            <constraint firstItem="xI2-i2-QYW" firstAttribute="leading" secondItem="4NF-aA-rKf" secondAttribute="leading" id="kjT-GE-aIV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4NF-aA-rKf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zZW-jg-Dr6"/>
+                    <connections>
+                        <outlet property="addressUILabel" destination="koH-dc-LLS" id="cXg-iF-cQv"/>
+                        <outlet property="openHourUILabel" destination="MCY-gB-E3K" id="U8o-LP-9AM"/>
+                        <outlet property="phoneUILabel" destination="kzy-TE-o53" id="JIU-a7-IKp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PKG-cW-qTF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.623188405797109" y="136.60714285714286"/>
+        </scene>
+    </scenes>
+</document>
